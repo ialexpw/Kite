@@ -122,6 +122,13 @@
 			# Get the long URL
 			$KiteURL = $_GET['longUrl'];
 			
+			# Add to the URL if needed
+			if($parts = parse_url($KiteURL)) {
+				if(!isset($parts['scheme'])) {
+					$KiteURL = 'http://' . $KiteURL;
+				}
+			}
+			
 			# Check Api requests
 			$KiteUser = $kt->GetUserFromApi($KiteApiKey);
 			
