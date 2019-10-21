@@ -22,6 +22,3 @@ After the installer has finished you need to remove the install directory from y
 
 ### Clean URLs
 Kite uses clean URL's when navigating to pages and comes with two separate methods to achieve this. Either through apache with Mod Rewrite or though an nginx server configuration file which is included.
-
-### More...
-You can view a demo of Kite here: http://kite.paq.nz/ and read the full documentation here: http://kite.paq.nz/documentation/
